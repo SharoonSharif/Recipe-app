@@ -62,7 +62,7 @@ function HomePage() {
     // Search filter
     const matchesSearch = recipe.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
       recipe.ingredients.some(ingredient => 
-        ingredient.toLowerCase().includes(searchTerm.toLowerCase())
+        ingredient.ingredient.toLowerCase().includes(searchTerm.toLowerCase())
       )
     
     // Category filter
